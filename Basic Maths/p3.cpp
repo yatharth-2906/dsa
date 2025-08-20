@@ -60,9 +60,9 @@ int main(void)
     cout << "Enter the value of y: ";
     cin >> y;
 
-    cout<<"The gcd of "<<x<<" and "<<y<<" is: "<<method_1(x,y)<<endl; // O(min(x,y))
-    cout<<"The gcd of "<<x<<" and "<<y<<" is: "<<method_2(x,y)<<endl; // O(min(x,y))
-    cout<<"The gcd of "<<x<<" and "<<y<<" is: "<<method_3(x,y)<<endl; // O(min(x,y)) -> Most Optimal
+    cout<<"The gcd of "<<x<<" and "<<y<<" is: "<<method_1(x,y)<<endl; // Time: O(min(x,y)) Space: O(1)
+    cout<<"The gcd of "<<x<<" and "<<y<<" is: "<<method_2(x,y)<<endl; // Time: O(min(x,y)) Space: O(1)
+    cout<<"The gcd of "<<x<<" and "<<y<<" is: "<<method_3(x,y)<<endl; // Time: O(min(x,y)) Space: O(1) -> Most Optimal
 
     return 0;
 }

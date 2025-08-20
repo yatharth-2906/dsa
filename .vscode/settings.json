@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "iostream": "cpp",
+        "array": "cpp",
+        "chrono": "cpp",
+        "functional": "cpp"
+    },
+    "code-runner.ignoreSelection": true
+}

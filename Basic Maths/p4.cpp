@@ -27,7 +27,7 @@ void method_1(int n)
         if (i < divisors.size() - 1)
             cout << ", ";
     }
-    cout << " ]"<<endl;
+    cout << " ]" << endl;
 }
 
 void method_2(int n)
@@ -42,9 +42,9 @@ void method_2(int n)
     }
 
     int t = divisors.size();
-    for(int i=t-1; i>=0; i--)
+    for (int i = t - 1; i >= 0; i--)
     {
-        if(divisors[i] != n / divisors[i])
+        if (divisors[i] != n / divisors[i])
             divisors.push_back(n / divisors[i]);
     }
 
@@ -55,7 +55,7 @@ void method_2(int n)
         if (i < divisors.size() - 1)
             cout << ", ";
     }
-    cout << " ]"<<endl;
+    cout << " ]" << endl;
 }
 
 int main(void)
@@ -64,8 +64,8 @@ int main(void)
     cout << "Enter the value of n: ";
     cin >> n;
 
-    method_1(n); // O( n )
-    method_2(n); // O( 2*sqrt(n) )
+    method_1(n); // Time: O(n) Space: O(2*sqrt(n))
+    method_2(n); // Time: O(sqrt(n)) Space: O(2*sqrt(n))
 
     return 0;
 }

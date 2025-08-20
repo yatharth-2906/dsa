@@ -32,7 +32,7 @@ int main(void)
     cout << "Enter the value of n: ";
     cin >> n;
 
-    cout<<"The reverse of "<<n<<" is: "<<method_1(n); // O(log10(n) + 1)
+    cout<<"The reverse of "<<n<<" is: "<<method_1(n); // Time: O(log10(n) + 1) Space: O(1)
 
     return 0;
 }

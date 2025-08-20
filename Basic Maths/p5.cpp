@@ -54,8 +54,8 @@ int main()
     int n;
     cin >> n;
 
-    method_1(n); // O( n )
-    method_2(n); // O( sqrt(n) )
+    method_1(n); // Time: O(n) Space: O(1)
+    method_2(n); // Time: O(sqrt(n)) Space: O(1)
 
     return 0;
 }

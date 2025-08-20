@@ -41,8 +41,8 @@ int main(void)
     cout << "Enter the value of n: ";
     cin >> n;
 
-    method_1(n); // O(log10(n) + 1)
-    method_2(n); // O(1)
+    method_1(n); // Time: O(log10(n) + 1) Space: O(1)
+    method_2(n); // Time: O(1) Space: O(1)
 
     return 0;
 }
