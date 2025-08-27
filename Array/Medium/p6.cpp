@@ -39,7 +39,7 @@ int main(void)
     vector<int> arr = {3, 1, -2, -5, 2, -4};
     int n = arr.size();
 
-    vector<int> res = rearrangeArray(arr, n); // Time: O(n) Space: O(n)
+    vector<int> res = rearrangeArray(arr, n); // Time: O(n) Space: O(1)
 
     cout << "Modified Array: " << endl;
     for (int i = 0; i < n; i++)

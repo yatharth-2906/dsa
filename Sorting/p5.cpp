@@ -11,14 +11,15 @@ using namespace std;
 
 int pivot_partition(vector<int> &arr, int start, int end)
 {
-    int pivot = arr[start];
-    int pivot_index = start;
+    int mid = start + (end - start) / 2;
+    int pivot = arr[mid];
 
-    for (int i = start+1; i <= end; i++)
+    int pivot_index = start;
+    for (int i = start; i <= end; i++)
         if (arr[i] < pivot)
             pivot_index++;
 
-    swap(arr[start], arr[pivot_index]);
+    swap(arr[mid], arr[pivot_index]);
 
     int left = start, right = end;
 
