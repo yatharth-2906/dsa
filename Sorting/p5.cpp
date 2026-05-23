@@ -14,6 +14,7 @@ int pivot_partition(vector<int> &arr, int start, int end)
     int mid = start + (end - start) / 2;
     int pivot = arr[mid];
 
+    // Counting Number of elements smaller than pivot selected.
     int pivot_index = start;
     for (int i = start; i <= end; i++)
         if (arr[i] < pivot)
@@ -23,6 +24,7 @@ int pivot_partition(vector<int> &arr, int start, int end)
 
     int left = start, right = end;
 
+    // Moving smaller elements to left and bigger elements to right of pivot.
     while (left < pivot_index && right > pivot_index)
     {
         if (arr[left] >= pivot)
@@ -53,7 +55,7 @@ int main(void)
     vector<int> arr = {64, 25, 12, 22, 11};
     int n = arr.size();
 
-    quick_sort(arr, 0, n - 1); // Time: O(log n) Space: O(1)
+    quick_sort(arr, 0, n - 1); // Time: O(n * log n) Space: O(1)
 
     cout << "Sorted array: \n";
     for (int i = 0; i < n; i++)
